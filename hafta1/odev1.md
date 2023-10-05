@@ -2,7 +2,7 @@
 ## Birinci Hafta Odev
 
 - Aşağıdaki soruları kendi cümlelerinizle yanıtlayın.
-- Yanıtlarınızı odev1_yanitlar/odev1_<ogrenci_isim_soyisim>.md dosyasına ekleyin.
+- Yanıtlarınızı odev1_yanitlar/<ogrenci_isim_soyisim>.md dosyasına ekleyin.
 - Bu repository'e pull request yapin.
 
 
