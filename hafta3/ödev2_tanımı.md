@@ -14,7 +14,6 @@ Detaylar için lütfen Ödev_2.ipynb dosyasını referans alın.
 - Windows icin Jupyter notebook: https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-in-windows/ 
 - Jupyteri setup olmadan denemek icin: https://jupyter.org/try 
 - Jupyter notebook kullanma örneği: https://www.codecademy.com/article/how-to-use-jupyter-notebooks 
-- 
 
 # Ödevin teslimi
 
@@ -23,6 +22,7 @@ Detaylar için lütfen Ödev_2.ipynb dosyasını referans alın.
  * Yanıtların yazdırıldığı output.txt dosyası
     
 Bu dosyaları zip halinde birleştirin ve bana isim_soyisim.zip dosyası olarak gönderin.
+
 
 Teşekkürler!! 
 
