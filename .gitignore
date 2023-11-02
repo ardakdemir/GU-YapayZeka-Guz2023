@@ -1,0 +1,5 @@
+venv*
+install
+yanitlar/*
+notebook_answers/*
+*.ipynb_checkpoint*
