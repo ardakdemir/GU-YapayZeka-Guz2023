@@ -1,6 +1,6 @@
 # IVB-511 Vize Projesi
 
-GUI uzerinden oynayabilecegimiz 
+GUI uzerinden Yapay zeka karsi oynayabilecegimiz bir TicTacToe uygulamasi gelistirme.
 
 ## 1. Installation
 
@@ -87,9 +87,9 @@ Bu bolumde beklentim yine 5inci haftada yazdığımız (`minimax_with_length`) g
 
 
 
-### 2.4 4'e 4 veya 5'e 5 tahtada oynamak (Bonus: 20 puan)
+### 2.4 4'e 4 veya 5'e 5 tahtada oynamak (Bonus: 15 puan)
 
-`BOARD_SIZE` parametresi tahtanin kaca kac oldugunu belirtiyor. 
+`BOARD_SIZE` parametresi tahtanın kaça kaç olduğunu belirtiyor. 
 
 Bu bolumde asagidaki sorulari yanitlamanizi bekliyorum:
 
@@ -97,9 +97,17 @@ Bu bolumde asagidaki sorulari yanitlamanizi bekliyorum:
 - 4'e 4 veya 5'e 5 tahtada dogru hamleyi bulmasi icin kac pozisyonu incelemek zorunda ve bilgisayarinizda bu ne kadar surdu?
 - NxN tahtada 1 saniyede hamle yapmamiz zorunlu olursa, iyi bir hamleyi nasil bulabiliriz? Burada derste ogrendigimiz `evaluation function` konseptinden bahsetmenizi ve oyun sonuna kadar gitmeden de iyi bir hamle bulabilen bir cozum onermenizi bekliyorum. Bu cozumu kodlamaniza gerek yok. 
 
+### 2.5 X veya O opsiyonu
 
+Bu bölümde beklentim kullanıcı arayüzüne bir buton ekleyip oyuncunun X veya O olmasını seçilebilir yapmak.
 
-## 3. Odev Teslimi
+Bu kesinlikle yapay zekayla ilişkili değil. Yalnızca kodlama pratiğinizi geliştirmeniz için bir bonus adım.
+
+Oyuncu hangi tarafı seçerse, yapay zeka rakibi oynamalı. Eğer kullanıcı O seçtiyse ilk hamle yapay zeka tarafından yapılmalı. X her zaman ilk hamleyi yapmalı.
+
+## 3. Ödev Teslimi
 
 Ödev kodunu ve sorular verdiğiniz yazılı yanıtları tek bir folderda isim_soyisim.zip dosyası şeklinde uzaktan eğitim sistemine yüklemenizi bekliyorum.
+
+Eğer çözerseniz, 2.4 bölümündeki yazılı soruları herhangi başka bir dökümana yazıp aynı zip dosyasına ekleyin.
 
