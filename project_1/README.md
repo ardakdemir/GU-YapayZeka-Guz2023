@@ -70,14 +70,14 @@ Algoritmanın en iyi hamleyi bulmasına gerek yok.
 
 ### 2.2 Minimax kullanan yapay zeka (70 puan)
 
-Success criteria: 3'e 3 oyunda hicbir zaman yenilmeyen ve X hata yaparsa her zaman oyunu kazanan yapay zeka
+Success criteria: 3'e 3 tahtada hicbir zaman yenilmeyen ve X hata yaparsa her zaman oyunu kazanan yapay zeka
 
 Bu bolumde beklentim 5inci haftada yazdıgımız minimax algoritmasını bu koda entegre edebilmeniz.
 Ödevin en temel kısmı burası
 
 ### 2.3 En az hamlede kazanan varyasyonlari her zaman bulan Yapay zeka (20 puan)
 
-Success criteria: 3'e 3 oyunda her zaman en az hamlede oyunu kazanacak hamleyi bulabilen yapay zeka
+Success criteria: 3'e 3 tahtada her zaman en az hamlede oyunu kazanacak hamleyi bulabilen yapay zeka
 
 Bu bolumde beklentim yine 5inci haftada yazdığımız (`minimax_with_length`) geliştirmeyi bu kodun içine entegre edebilmeniz.
 
