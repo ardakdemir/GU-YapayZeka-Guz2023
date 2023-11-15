@@ -97,7 +97,7 @@ Bu bolumde asagidaki sorulari yanitlamanizi bekliyorum:
 - 4'e 4 veya 5'e 5 tahtada dogru hamleyi bulmasi icin kac pozisyonu incelemek zorunda ve bilgisayarinizda bu ne kadar surdu?
 - NxN tahtada 1 saniyede hamle yapmamiz zorunlu olursa, iyi bir hamleyi nasil bulabiliriz? Burada derste ogrendigimiz `evaluation function` konseptinden bahsetmenizi ve oyun sonuna kadar gitmeden de iyi bir hamle bulabilen bir cozum onermenizi bekliyorum. Bu cozumu kodlamaniza gerek yok. 
 
-### 2.5 X veya O opsiyonu
+### 2.5 X veya O opsiyonu (Bonus: 15 puan)
 
 Bu bölümde beklentim kullanıcı arayüzüne bir buton ekleyip oyuncunun X veya O olmasını seçilebilir yapmak.
 
