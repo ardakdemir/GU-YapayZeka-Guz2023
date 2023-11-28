@@ -5,3 +5,4 @@ notebook_answers/*
 *.ipynb_checkpoint*
 vize1
 vize1/*
+*pycache*

@@ -4,6 +4,9 @@ import tkinter as tk
 from itertools import cycle
 from tkinter import font
 from typing import NamedTuple
+from random import random
+
+from minimax import BOARD_TO_CELL, current_moves_to_board, minimax, minimax_with_length
 
 class Player(NamedTuple):
     label: str
@@ -14,7 +17,7 @@ class Move(NamedTuple):
     col: int
     label: str = ""
 
-BOARD_SIZE = 4
+BOARD_SIZE = 3
 DEFAULT_PLAYERS = (
     Player(label="X", color="blue"),
     Player(label="O", color="green"),
@@ -96,6 +99,7 @@ class TicTacToeBoard(tk.Tk):
         super().__init__()
         self.title("Tic-Tac-Toe Game")
         self._cells = {}
+        self.cell_to_button = {}
         self._game = game
         self._create_menu()
         self._create_board_display()
@@ -140,16 +144,52 @@ class TicTacToeBoard(tk.Tk):
                 button.bind("<ButtonPress-1>", self.play)
                 button.grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
 
-    def ai_play(self):
-        """  Implement the response by AI"""
-        pass
+                self.cell_to_button[(row,col)] = button
+
+    def random_ai(self):
+        """  Random response by AI"""
+        while True:
+            row, col = int(random()*3),int(random()*3)
+            move = Move(row, col, self._game.current_player.label)
+            if self._game.is_valid_move(move): 
+                return move
     
-    
-    def play(self, event):
-        """Handle a player's move."""
-        clicked_btn = event.widget
-        row, col = self._cells[clicked_btn]
+    def minimax_ai(self):
+        """  Minimax response by AI"""
+        board = current_moves_to_board(self._game._current_moves)
+
+        turn = self._game.current_player.label
+        func = max if turn == "X" else min
+        score, move = minimax(board,turn, func)
+        row, col = BOARD_TO_CELL[move]
+        print(f"Minimax move row: {row} col: {col}", f"AI score: {score}")
         move = Move(row, col, self._game.current_player.label)
+        return move
+    
+    def minimax_with_length_ai(self):
+        """  Minimax with length response by AI"""
+        board = current_moves_to_board(self._game._current_moves)
+
+        turn = self._game.current_player.label
+        func = max if turn == "X" else min
+        score, move = minimax_with_length(board,turn, func)
+        row, col = BOARD_TO_CELL[move]
+        print(f"Minimax with length move row: {row} col: {col}", f"AI score: {score}")
+        move = Move(row, col, self._game.current_player.label)
+        return move
+    
+    def play(self, event=None, move = None):
+        """Handle a player's move."""
+
+        if move is None:
+            clicked_btn = event.widget
+            row, col = self._cells[clicked_btn]
+            move = Move(row, col, self._game.current_player.label)
+        else:
+            row, col = move.row, move.col
+            print("Row col", row,col)
+            clicked_btn = self.cell_to_button[(row,col)]
+
         if self._game.is_valid_move(move):
             self._update_button(clicked_btn)
             self._game.process_move(move)
@@ -164,6 +204,9 @@ class TicTacToeBoard(tk.Tk):
                 self._game.toggle_player()
                 msg = f"{self._game.current_player.label}'s turn"
                 self._update_display(msg)
+                if event is not None:
+                    self.play(move=self.minimax_with_length_ai())
+
 
     def _update_button(self, clicked_btn):
         clicked_btn.config(text=self._game.current_player.label)
