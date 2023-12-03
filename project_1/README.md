@@ -109,7 +109,7 @@ Oyuncu hangi tarafı seçerse, yapay zeka rakibi oynamalı. Eğer kullanıcı O 
 
 ## 3. Ödev Teslimi
 
-Ödev kodunu ve sorular verdiğiniz yazılı yanıtları tek bir folderda isim_soyisim.zip dosyası şeklinde ardaakdemir1@gmail.com email adresine gönderiniz. Konu: "<Isim Soyisim> IVB-511 Vize Projesi" olmali.
+Ödev kodunu ve sorular verdiğiniz yazılı yanıtları tek bir folderda isim_soyisim.zip dosyası şeklinde ardaakdemir1@gmail.com email adresine gönderiniz. Konu: "[Isim Soyisim] IVB-511 Vize Projesi" olmali.
 
 Eğer çözerseniz, 2.4 bölümündeki yazılı soruları herhangi başka bir dökümana yazıp aynı zip dosyasına ekleyin.
 
