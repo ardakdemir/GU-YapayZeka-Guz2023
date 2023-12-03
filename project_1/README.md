@@ -40,9 +40,9 @@ Tkinter bilgisayarınızda yüklü olabilir. Değilse https://www.geeksforgeeks.
 
 ### 1.3 Run 
 
-Oyunu baslatmak icin: 
+`project_1` folderinin icinde bir terminal baslat ve asagidaki kodu calistir: 
 
-```
+```bash
 python tictactoe.py
 ```
 
@@ -52,6 +52,8 @@ Aşağıdaki arayüzü görüyor olmalıyız:
 
 
 ## 2. Odev
+
+(Not: Kodun bu versiyonu derste beraber yazdigimiz yaniti iceriyor. Bu sekilde teslim etmenizde bir sakinca yok. Yeni bir sey eklemeniz gerekmiyor.) Kendiniz baska bir algoritma implement etmek isterseniz o da olur :)) 
 
 Amacimiz hazir verilen iskelet kodu modifiye ederek AI ile karsilikli oynamak. 
 Algoritma olarak 5inci derste beraber kodladigimiz algoritmayi bu framework icine entegre edebilmenizi gormek istiyorum.
