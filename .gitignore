@@ -1,6 +1,8 @@
 venv*
 install
 yanitlar/*
+submissions/*
+submissions*
 notebook_answers/*
 *.ipynb_checkpoint*
 vize1
