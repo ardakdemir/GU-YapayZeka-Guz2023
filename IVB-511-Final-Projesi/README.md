@@ -5,6 +5,8 @@
 - 5 min Q&A
 - Decide paper on your own or you can ask me for paper recommendations
 
+Ayni makaleyi birden fazla grup sunamaz. Her grubun makalesini selected_papers.md de anons edecegim.
+
 
 ## Topics
 - Neural Networks, Deep Learning
